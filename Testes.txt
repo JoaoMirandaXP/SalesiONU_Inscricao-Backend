@@ -1,0 +1,13 @@
+    async acnurDBStore(request){
+        const {nome,pagamento,cpf,email,delegacao} = request.body
+        const acnurDB = await acnur.update({
+			nome,
+			pagamento,
+			cpf,
+			email,
+			delegacao
+		})
+		console.log(acnurDB)
+	},
+
+    
